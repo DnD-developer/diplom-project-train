@@ -17,7 +17,10 @@ const PAGES = fs
 
 module.exports = {
 	resolve: {
-		extensions: [".tsx", ".ts", ".js"]
+		extensions: [".tsx", ".ts", ".js"],
+		alias: {
+			"@": PATHS.app
+		}
 	},
 	externals: {
 		paths: PATHS
@@ -59,7 +62,9 @@ module.exports = {
 						loader: "postcss-loader",
 						options: {
 							sourceMap: true,
-							postcssOptions: { config: path.resolve(__dirname, "../postcss.config.js") }
+							postcssOptions: {
+								config: path.resolve(__dirname, "../postcss.config.js")
+							}
 						}
 					},
 
@@ -70,7 +75,7 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.module\.s[ac]ss$/i,
+				test: /\.module\.s?[ac]ss$/i,
 				use: [
 					MiniCssExtractPlugin.loader,
 					{
@@ -78,7 +83,8 @@ module.exports = {
 						options: {
 							sourceMap: true,
 							modules: {
-								localIdentName: "[local]__[sha1:hash:hex:77]"
+								localIdentName: "[local]__[sha1:hash:hex:10]",
+								exportLocalsConvention: "camelCaseOnly"
 							}
 						}
 					},
@@ -87,13 +93,37 @@ module.exports = {
 						loader: "postcss-loader",
 						options: {
 							sourceMap: true,
-							postcssOptions: { config: path.resolve(__dirname, "../postcss.config.js") }
+							postcssOptions: {
+								config: path.resolve(__dirname, "../postcss.config.js")
+							}
 						}
 					},
 
 					{
 						loader: "sass-loader",
 						options: { sourceMap: true }
+					}
+				]
+			},
+			{
+				test: /\.svg$/i,
+				issuer: /\.[jt]sx?$/,
+				use: [
+					{
+						loader: "@svgr/webpack",
+						options: {
+							svgoConfig: {
+								plugins: [
+									{
+										name: "convertColors",
+										params: {
+											currentColor: true
+										}
+									}
+								]
+							},
+							icon: true
+						}
 					}
 				]
 			},

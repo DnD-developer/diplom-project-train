@@ -3,6 +3,8 @@ const webpack = require("webpack")
 const webpackConfig = require("./webpack.config")
 const ESLintPlugin = require("eslint-webpack-plugin")
 const Dotenv = require("dotenv-webpack")
+const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin")
+const ReactRefreshTypeScript = require("react-refresh-typescript")
 
 const devWebpackconfig = merge(webpackConfig, {
 	mode: "development",
@@ -51,12 +53,15 @@ const devWebpackconfig = merge(webpackConfig, {
 				exclude: "/node_modules/",
 				use: [
 					{
-						loader: "ts-loader"
+						loader: "ts-loader",
+						options: {
+							transpileOnly: true
+						}
 					}
 				]
 			},
 			{
-				test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+				test: /\.(png|jpg|jpeg|gif|webp)$/i,
 				type: "asset/resource",
 				generator: {
 					filename: `${webpackConfig.externals.paths.assets}img/[name]-[contenthash][ext]`
@@ -72,6 +77,7 @@ const devWebpackconfig = merge(webpackConfig, {
 		new ESLintPlugin({
 			extensions: ["js", "mjs", "jsx", "ts", "tsx"]
 		}),
+		new ReactRefreshWebpackPlugin(),
 		new Dotenv()
 	]
 })
