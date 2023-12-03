@@ -1,12 +1,10 @@
-// utils
-import React from "react"
 // styles
-import styles from "./InputStatic.module.scss"
+import styles from "@/app/ui/InputStatic/InputStatic.module.scss"
 // interfaces
-import { InputStaticProps, inputSettings } from "./InputStatic.interface"
-import { typeInputSatic } from "../../../types/enums"
+import { InputStaticProps, inputSettings } from "@/app/ui/InputStatic/InputStatic.interface"
+import { typeInputSatic } from "@/types/enums"
 
-export default function InputStatic({ type, label = "Заголовок" }: InputStaticProps) {
+export function InputStatic({ type, label = "Заголовок" }: InputStaticProps) {
 	const settings: inputSettings = {
 		classes: styles.input,
 		labelTitle: label

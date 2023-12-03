@@ -1,12 +1,12 @@
 // utils
-import React, { useState } from "react"
-// styles
-import styles from "./Button.module.scss"
+import { useState } from "react"
 // interfaces
-import { buttonProps } from "./Button.interface"
-import { typeButtons } from "../../../types/enums"
+import { typeButton } from "@/types/enums"
+import { buttonProps } from "@/app/ui/Button/Button.interface"
+// styles
+import styles from "@/app/ui/Button/Button.module.scss"
 
-export default function Button({ text, type, onClick, hold }: buttonProps): React.JSX.Element {
+export function Button({ text, type, onClick, hold }: buttonProps) {
 	const [pressed, setPressed] = useState(false)
 
 	let className = styles.button
@@ -17,13 +17,13 @@ export default function Button({ text, type, onClick, hold }: buttonProps): Reac
 	}
 
 	switch (type) {
-		case typeButtons.longHighOrangeBlackFontThree:
+		case typeButton.longHighOrangeBlackFontThree:
 			pressedClass = pressed ? styles.pressedTransparentOrange : styles.orangeBlack
 
 			className = className.concat(` ${styles.long} ${styles.high} ${pressedClass}`)
 			break
 
-		case typeButtons.longHighOrangeWhiteFontFour:
+		case typeButton.longHighOrangeWhiteFontFour:
 			if (!hold) {
 				pressedClass = pressed ? styles.pressedTransparentOrange : styles.orangeWhite
 			}
@@ -31,7 +31,7 @@ export default function Button({ text, type, onClick, hold }: buttonProps): Reac
 			className = className.concat(` ${styles.long} ${styles.high} ${pressedClass}`)
 			break
 
-		case typeButtons.shortHighOrangeWhiteFontFour:
+		case typeButton.shortHighOrangeWhiteFontFour:
 			if (!hold) {
 				pressedClass = pressed ? styles.pressedTransparentOrange : styles.orangeWhite
 			}
@@ -39,32 +39,34 @@ export default function Button({ text, type, onClick, hold }: buttonProps): Reac
 			className = className.concat(` ${styles.short} ${styles.high} ${pressedClass}`)
 			break
 
-		case typeButtons.shortLowOrangeWhiteFontFour:
+		case typeButton.shortLowOrangeWhiteFontFour:
 			if (!hold) {
 				pressedClass = pressed ? styles.pressedTransparentOrange : styles.orangeWhite
 			}
 
 			className = className.concat(` ${styles.short} ${styles.low} ${pressedClass}`)
 			break
-		case typeButtons.shorLowTransparentBlackFontThree:
+		case typeButton.shorLowTransparentBlackFontThree:
 			pressedClass = pressed ? styles.orangeBlack : styles.transparentBlack
 
 			className = className.concat(` ${styles.short} ${styles.low} ${pressedClass}`)
 			break
-		case typeButtons.shortMiddleTransparentBlackFontThree:
+		case typeButton.shortMiddleTransparentBlackFontThree:
 			pressedClass = pressed ? styles.orangeBlack : styles.transparentBlack
 
 			className = className.concat(` ${styles.short} ${styles.middle} ${pressedClass}`)
 			break
-		case typeButtons.longHighTransparentWhiteFontThree:
+		case typeButton.longHighTransparentWhiteFontThree:
 			pressedClass = pressed ? styles.pressedTransparentWhite : styles.transparentWhite
 
 			className = className.concat(` ${styles.long} ${styles.high} ${pressedClass}`)
 			break
-		case typeButtons.shortHighTransparentWhiteFontThree:
+		case typeButton.shortHighTransparentWhiteFontThree:
 			pressedClass = pressed ? styles.pressedTransparentWhite : styles.transparentWhite
 
-			className = className.concat(` ${styles.short} ${styles.high} ${pressedClass} ${styles.fontThin}`)
+			className = className.concat(
+				` ${styles.short} ${styles.high} ${pressedClass} ${styles.fontThin}`
+			)
 			break
 
 		default:

@@ -1,4 +1,4 @@
-@import "../../styles/utils/vars.scss";
+@import "../../styles/utils/vars";
 
 .button {
 	display: flex;
@@ -79,7 +79,7 @@
 	&:hover {
 		background-color: $gold;
 		color: $dark;
-		border: none;
+		border: 1px solid $gold;
 	}
 }
 

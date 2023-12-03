@@ -1,19 +1,14 @@
 // hooks
 import { useState } from "react"
 // icons
-import PlusScuare from "@/app/assets/icons/plusScuare.svg"
-import MinusScuare from "@/app/assets/icons/minusScuare.svg"
-import PlusCercle from "@/app/assets/icons/plusCercle.svg"
-import ArrowTop from "@/app/assets/icons/arrowTop.svg"
-import MinusCercle from "@/app/assets/icons/minusCercle.svg"
+import { ArrowTop, PlusScuare, MinusScuare, PlusCercle, MinusCercle } from "@/constants/icons"
 // styles
-
-import styles from "./IconButton.module.scss"
+import styles from "@/app/ui/IconButton/IconButton.module.scss"
 // intrface
-import { IconButtonProps, IconButtonSettings } from "./IconButton.interface"
-import { typeIconButton } from "../../../types/enums"
+import { typeIconButton } from "@/types/enums"
+import { IconButtonProps, IconButtonSettings } from "@/app/ui/IconButton/IconButton.interface"
 
-export default function IconButton({ type, onClick }: IconButtonProps) {
+export function IconButton({ type, onClick }: IconButtonProps) {
 	const [active, setActive] = useState(false)
 
 	const settings: IconButtonSettings = {

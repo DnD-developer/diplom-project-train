@@ -1,14 +1,16 @@
+// utils
+import { Link } from "react-router-dom"
 // icon
-import LogoIcon from "@/app/assets/icons/logo.svg"
+import { LogoIcon } from "@/constants/icons"
 // interface
 import { LogoProps } from "@/app/ui/Logo/Logo.interface"
 // styles
-import styles from "./Logo.module.scss"
+import styles from "@/app/ui/Logo/Logo.module.scss"
 
-export default function Logo({ mainLink }: LogoProps) {
+export function Logo({ mainLink }: LogoProps) {
 	return (
-		<a href={mainLink}>
+		<Link to={mainLink}>
 			<LogoIcon className={styles.logo} />
-		</a>
+		</Link>
 	)
 }

@@ -9,7 +9,7 @@ import climat from "@/app/assets/icons/climat-icon.svg"
 import tea from "@/app/assets/icons/tea-icon.svg"
 import underwear from "@/app/assets/icons/underwear-icon.svg"
 // styles
-import styles from "./Option.module.scss"
+import styles from "@/app/ui/Option/Option.module.scss"
 
 export default function Option({ type, choice, active = true, onClick, textPrompt }: optionProps) {
 	const [_choice, _setChoice] = useState(choice)

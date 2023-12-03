@@ -1,5 +1,5 @@
 import { FC, SVGProps } from "react"
-import { typeIconButton } from "../../../types/enums"
+import { typeIconButton } from "@/types/enums"
 
 export interface IconButtonProps {
 	type: typeIconButton

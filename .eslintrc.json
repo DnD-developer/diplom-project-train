@@ -44,6 +44,13 @@
 				"allow": ["warn", "error", "info"]
 			}
 		],
+		"jsx-a11y/label-has-associated-control": [
+			2,
+			{
+				"labelComponents": ["label"],
+				"controlComponents": ["InputSubscribtion"]
+			}
+		],
 		"import/prefer-default-export": "off",
 		"import/no-extraneous-dependencies": "off",
 		"jsx-a11y/click-events-have-key-events": "off",

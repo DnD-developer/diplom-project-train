@@ -1,8 +1,8 @@
-import { typeButtons } from "../../../types/enums"
+import { typeButton } from "../../../types/enums"
 
 export interface buttonProps {
 	text: string
-	type: typeButtons
+	type: typeButton
 	onClick: () => void
 	hold?: boolean
 }

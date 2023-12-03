@@ -21,7 +21,8 @@ const devWebpackconfig = merge(webpackConfig, {
 				errors: true
 			}
 		},
-		port: 8081
+		port: 8081,
+		historyApiFallback: true
 	},
 	module: {
 		rules: [
@@ -53,10 +54,7 @@ const devWebpackconfig = merge(webpackConfig, {
 				exclude: "/node_modules/",
 				use: [
 					{
-						loader: "ts-loader",
-						options: {
-							transpileOnly: true
-						}
+						loader: "ts-loader"
 					}
 				]
 			},

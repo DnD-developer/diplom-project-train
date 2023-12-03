@@ -1,7 +1,7 @@
-@import "./utils/libs";
-@import "./utils/fonts";
-@import "./utils/vars";
-@import "./utils/animation.scss";
+@import "utils/libs";
+@import "utils/fonts";
+@import "utils/vars";
+@import "utils/animation";
 
 html {
 	box-sizing: border-box;
@@ -32,7 +32,7 @@ body {
 	position: relative;
 	overflow-x: hidden;
 	height: 100%;
-	background-color: #292929;
+	//background-color: #292929;
 	font-family: "Roboto", "sans-serif";
 }
 
@@ -54,7 +54,7 @@ li {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1430px;
 	margin: 0 auto;
 	padding: 0 15px;
 }

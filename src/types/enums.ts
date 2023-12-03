@@ -1,4 +1,4 @@
-export enum typeButtons {
+export enum typeButton {
 	longHighOrangeBlackFontThree,
 	shortHighOrangeWhiteFontFour,
 	shortLowOrangeWhiteFontFour,
@@ -7,6 +7,13 @@ export enum typeButtons {
 	longHighTransparentWhiteFontThree,
 	shortHighTransparentWhiteFontThree,
 	shortMiddleTransparentBlackFontThree
+}
+
+export enum typeHyperLink {
+	phone,
+	mail,
+	skype,
+	default
 }
 
 export enum typeOption {

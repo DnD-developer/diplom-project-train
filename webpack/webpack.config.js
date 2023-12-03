@@ -19,6 +19,7 @@ module.exports = {
 	resolve: {
 		extensions: [".tsx", ".ts", ".js"],
 		alias: {
+			"@module": `${PATHS.app}/app/modules`,
 			"@": PATHS.app
 		}
 	},
@@ -111,7 +112,9 @@ module.exports = {
 				use: [
 					{
 						loader: "@svgr/webpack",
+
 						options: {
+							icon: true,
 							svgoConfig: {
 								plugins: [
 									{
@@ -121,8 +124,7 @@ module.exports = {
 										}
 									}
 								]
-							},
-							icon: true
+							}
 						}
 					}
 				]
