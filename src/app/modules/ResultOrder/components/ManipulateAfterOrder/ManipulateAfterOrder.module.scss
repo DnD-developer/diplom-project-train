@@ -1,0 +1,36 @@
+@import "@/app/styles/utils/vars";
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	min-height: 160px;
+
+	padding-left: 85px;
+	padding-right: 85px;
+
+	background-color: $orange-active-color;
+}
+
+.link {
+	max-width: 320px;
+	width: 100%;
+
+	color: $dark;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 60px;
+	text-align: center;
+
+	border: 1px solid $dark;
+	border-radius: 5px;
+
+	transition: all 0.3s;
+
+	background: transparent;
+
+	&:hover {
+		box-shadow: $shadow;
+	}
+}

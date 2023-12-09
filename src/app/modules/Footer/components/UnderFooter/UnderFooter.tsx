@@ -12,7 +12,7 @@ export function UnderFooter() {
 	}
 	return (
 		<div className={styles.wrapper}>
-			<Logo mainLink="/" />
+			<Logo mainLink={process.env.MAIN_PAGE} />
 			<IconButton
 				type={typeIconButton.arrowTop}
 				onClick={onClick}

@@ -1,0 +1,37 @@
+@import "@/app/styles/utils/vars";
+
+.wrapper {
+	max-width: 980px;
+	width: 100%;
+
+	padding-top: 95px;
+	padding-bottom: 129px;
+
+	margin: 0 auto;
+
+	color: $dark;
+}
+
+.title {
+	color: inherit;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.text {
+	margin-top: 51px;
+
+	color: inherit;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.under-text {
+	margin-top: 95px;
+
+	color: inherit;
+	font-size: 24px;
+	font-weight: 700;
+}

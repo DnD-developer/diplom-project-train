@@ -11,7 +11,7 @@ export function Header() {
 		<div className="header">
 			<div className="container">
 				<div className={styles.logoWrapper}>
-					<Logo mainLink="/" />
+					<Logo mainLink={process.env.MAIN_PAGE} />
 				</div>
 			</div>
 			<div className={styles.listWrapper}>

@@ -20,6 +20,10 @@ import PlusCercle from "@/app/assets/icons/plusCercle.svg"
 import ArrowTop from "@/app/assets/icons/arrowTop.svg"
 import MinusCercle from "@/app/assets/icons/minusCercle.svg"
 
+// other
+import Rub from "@/app/assets/icons/rub.svg"
+import Star from "@/app/assets/icons/star.svg"
+
 export {
 	Phone,
 	Mail,
@@ -35,5 +39,7 @@ export {
 	MinusScuare,
 	PlusCercle,
 	MinusCercle,
-	ArrowTop
+	ArrowTop,
+	Rub,
+	Star
 }

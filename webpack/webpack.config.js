@@ -19,7 +19,6 @@ module.exports = {
 	resolve: {
 		extensions: [".tsx", ".ts", ".js"],
 		alias: {
-			"@module": `${PATHS.app}/app/modules`,
 			"@": PATHS.app
 		}
 	},

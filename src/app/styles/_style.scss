@@ -78,6 +78,10 @@ li {
 
 .content {
 	flex: 1 0 auto;
+
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: top;
 }
 
 footer {
