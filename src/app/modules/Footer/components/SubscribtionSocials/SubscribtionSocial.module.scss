@@ -1,0 +1,17 @@
+@import "@/app/styles/utils/vars";
+
+.wrapper {
+	margin-top: 50px;
+}
+
+.title {
+	color: $white;
+	font-size: 30px;
+}
+
+.list {
+	display: flex;
+	align-items: flex-end;
+
+	margin-top: 20px;
+}

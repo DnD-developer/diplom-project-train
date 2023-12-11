@@ -1,0 +1,40 @@
+@import "@/app/styles/utils/vars";
+
+.link {
+	display: flex;
+	align-items: center;
+
+	margin-top: 30px;
+
+	&:first-child {
+		margin-top: 0px;
+	}
+}
+
+.link-text {
+	display: inline-block;
+
+	max-width: 250px;
+	width: 100%;
+
+	margin-left: 35px;
+
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 400;
+}
+
+.link-icon {
+	width: 30px;
+	height: 30px;
+}
+
+.link-icon,
+.link-text {
+	transition: all 0.3s;
+	color: $ligth-gray;
+
+	&:hover {
+		color: $gold;
+	}
+}

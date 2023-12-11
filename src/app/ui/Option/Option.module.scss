@@ -1,0 +1,100 @@
+@import "@/app/styles/utils/vars";
+
+.wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 5px;
+
+	outline: none;
+	border: none;
+
+	cursor: pointer;
+
+	&:hover {
+		span {
+			display: block;
+		}
+	}
+
+	span {
+		display: none;
+		position: absolute;
+		left: 50%;
+		top: 115%;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+
+		white-space: nowrap;
+		transform: translate(-50%);
+		font-size: 16px;
+		z-index: 100;
+		border-radius: 5px;
+		background-color: $textprompt-bg;
+		box-shadow: $shadow;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 0;
+			width: 10px;
+			height: 10px;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid $textprompt-bg;
+			transform: translate(-50%, -100%);
+		}
+	}
+}
+
+.icon {
+	width: 19px;
+	height: 19px;
+	transition: inherit;
+}
+
+.wrapper-choice {
+	background-color: $light-orange;
+
+	.icon {
+		fill: $white-light-gray;
+	}
+}
+
+.wrapper-unchoice {
+	background-color: transparent;
+	border: 1px solid $dark;
+
+	.icon {
+		fill: $dark;
+	}
+}
+
+.wrapper-choice,
+.wrapper-unchoice {
+	&:hover {
+		background-color: $orange-active-color;
+		border: 1px solid $dark;
+
+		.icon {
+			fill: $dark;
+		}
+	}
+}
+
+.wrapper-choice-not-active {
+	background-color: $light-gold;
+
+	.icon {
+		fill: $gray;
+	}
+
+	cursor: auto;
+}

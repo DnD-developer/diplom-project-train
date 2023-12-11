@@ -1,0 +1,101 @@
+@import "../../styles/utils/vars";
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+	font-family: inherit;
+	font-size: 24px;
+	font-weight: 700;
+	border-radius: 5px;
+
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.short {
+	max-width: 222px;
+}
+
+.long {
+	max-width: 323px;
+}
+
+.high {
+	height: 60px;
+
+	text-transform: uppercase;
+}
+
+.low {
+	height: 39px;
+}
+
+.middle {
+	height: 52px;
+}
+
+.hold {
+	background-color: $gray;
+	color: $white;
+}
+
+.orange-black {
+	background-color: $orange-active-color;
+	color: $dark;
+}
+
+.orange-white {
+	background-color: $orange-active-color;
+	color: $white;
+}
+
+.orange-black,
+.orange-white,
+.pressed-transparent-orange {
+	&:hover {
+		box-shadow: $shadow;
+	}
+}
+
+.transparent-black {
+	background-color: transparent;
+	color: $dark;
+	border: 1px solid $dark;
+
+	&:hover {
+		color: $orange-active-color;
+	}
+}
+
+.transparent-white {
+	background-color: transparent;
+	border: 1px solid $white;
+	color: $white;
+
+	&:hover {
+		background-color: $gold;
+		color: $dark;
+		border: 1px solid $gold;
+	}
+}
+
+.pressed-transparent-white {
+	background-color: $white;
+	color: $dark !important;
+	border: none;
+}
+
+.pressed-transparent-orange {
+	background-color: transparent;
+	color: $orange-active-color;
+	border: 1px solid $orange-active-color;
+}
+
+.font-thin {
+	font-weight: 400;
+	color: $ligth-gray;
+}

@@ -1,0 +1,31 @@
+@import "@/app/styles/utils/vars";
+
+.total-wrapper {
+	display: flex;
+	align-items: flex-end;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.text-total {
+	margin-right: 15px;
+
+	font-size: inherit;
+	font-weight: 400;
+	color: $gray;
+}
+
+.price-total {
+	font-size: inherit;
+	color: $dark41;
+}
+
+.rub-total {
+	width: 21px;
+	height: 27px;
+
+	margin-left: 10px;
+	margin-bottom: 4px;
+
+	color: $gray;
+}

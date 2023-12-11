@@ -1,0 +1,29 @@
+@import "@/app/styles/utils/vars";
+
+:global {
+	.slick-list {
+		padding-bottom: 137px;
+	}
+
+	.slick-dots {
+		li {
+			button:before {
+				font-size: 20px;
+				color: $ligth-gray;
+				opacity: 1;
+			}
+		}
+
+		.slick-active {
+			button:before {
+				font-size: 20px;
+				color: $grayC4 !important;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.wrapper {
+	margin-top: 80px;
+}

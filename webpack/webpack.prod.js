@@ -36,7 +36,7 @@ const prodWebpackConfig = merge(webpackConfig, {
 				}
 			},
 			{
-				test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+				test: /\.(png|jpg|jpeg|gif|webp)$/i,
 				type: "asset/resource",
 				generator: {
 					filename: `${webpackConfig.externals.paths.assets}img/[name]-[contenthash][ext]`

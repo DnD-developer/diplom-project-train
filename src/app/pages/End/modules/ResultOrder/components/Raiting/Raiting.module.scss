@@ -1,0 +1,59 @@
+@import "@/app/styles/utils/vars";
+
+.wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.text {
+	font-size: 24px;
+	color: $dark;
+}
+
+.list-rait {
+	margin-left: 30px;
+	color: $white !important;
+
+	* {
+		transition: all 0s !important;
+	}
+}
+
+:global {
+	.ant-rate-star {
+		margin-left: 20px !important;
+
+		&:first-child {
+			margin-left: 0px !important;
+		}
+	}
+
+	.ant-rate-star-zero {
+		* {
+			fill: transparent;
+		}
+	}
+
+	.ant-rate-star-half {
+		.ant-rate-star-first {
+			* {
+				fill: $white;
+			}
+		}
+
+		.ant-rate-star-second {
+			* {
+				fill: transparent;
+			}
+		}
+	}
+}
+
+.rait {
+	width: 48px;
+	height: 48px;
+
+	* {
+		stroke: $white;
+	}
+}

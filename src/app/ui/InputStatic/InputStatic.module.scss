@@ -1,0 +1,42 @@
+@import "../../styles/utils/vars";
+
+.input {
+	display: block;
+	width: 100%;
+	margin-top: 6px;
+	padding-left: 15px;
+	padding-right: 15px;
+	line-height: 50px;
+	border: 1px solid $gray;
+	border-radius: 5px;
+	font-size: 24px;
+	font-weight: 400;
+
+	&::placeholder {
+		color: $ligth-gray;
+	}
+}
+
+.input-wrapper {
+	display: inline-block;
+}
+
+.label {
+	display: block;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: $gray;
+	font-weight: 400;
+}
+
+.personal-document {
+	max-width: 205px;
+}
+
+.date-birth {
+	max-width: 240px;
+}
+
+.default-text {
+	max-width: 280px;
+}

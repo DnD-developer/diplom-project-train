@@ -1,0 +1,16 @@
+@import "@/app/styles/utils/vars";
+
+.item {
+	margin-left: 80px;
+
+	&:first-child {
+		margin-left: 0px;
+	}
+}
+
+.item-link {
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 35px;
+	color: $white;
+}

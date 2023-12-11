@@ -1,0 +1,27 @@
+@import "@/app/styles/utils/vars";
+
+.link-item {
+	margin-left: 48px;
+	width: 35px;
+	height: 35px;
+
+	&:first-child {
+		margin-left: 0px;
+	}
+}
+
+.link {
+	color: $ligth-gray;
+	height: 100%;
+	width: 100%;
+
+	&:hover {
+		color: $gold;
+	}
+}
+
+.link-icon {
+	color: inherit;
+	height: 100%;
+	width: auto;
+}

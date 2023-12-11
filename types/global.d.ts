@@ -1,36 +1,15 @@
-declare module "*.module.css" {
-	const styles: { [className: string]: string }
-	export default styles
-}
-declare module "*.module.scss" {
-	const styles: { [className: string]: string }
-	export default styles
-}
+declare module "*.module.css"
+declare module "*.module.scss"
+
+declare module "*.png"
+declare module "*.jpg"
+declare module "*.jpeg"
+declare module "*.gif"
+declare module "*.webp"
+declare module "*.mp3"
 declare module "*.svg" {
-	const value: string
-	export default value
-}
-declare module "*.png" {
-	const value: string
-	export default value
-}
-declare module "*.jpg" {
-	const value: string
-	export default value
-}
-declare module "*.jpeg" {
-	const value: string
-	export default value
-}
-declare module "*.gif" {
-	const value: string
-	export default value
-}
-declare module "*.webp" {
-	const value: string
-	export default value
-}
-declare module "*.mp3" {
-	const value: string
-	export default value
+	import { FC, SVGProps } from "react"
+
+	const SVG: FC<SVGProps<SVGSVGElement>>
+	export default SVG
 }

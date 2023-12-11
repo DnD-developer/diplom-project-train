@@ -1,0 +1,15 @@
+@import "../../styles/utils/vars";
+
+.logo-wrapper {
+	display: flex;
+	align-items: center;
+
+	width: 100%;
+	min-height: 64px;
+
+	background: transparent;
+}
+
+.list-wrapper {
+	background-color: $dark;
+}

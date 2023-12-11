@@ -1,0 +1,62 @@
+@import "../../styles/utils/vars";
+
+.select-wrapper {
+	width: 139px;
+	margin-top: -12px;
+}
+
+.options-list {
+	margin-top: 41px;
+}
+
+.option {
+	width: 100%;
+	line-height: 41px;
+	border-radius: 0px;
+	background-color: transparent;
+	text-align: left;
+	padding: 0 5px;
+
+	color: $dark;
+
+	cursor: pointer;
+}
+
+.option-to-choice {
+	border-top: 1px solid $ligth-gray;
+	box-shadow: $shadow;
+	background-color: $white;
+
+	&:hover {
+		background-color: $gold;
+		color: $white;
+	}
+
+	&:first-child {
+		border-top: none;
+	}
+}
+
+.label-option {
+	font-size: 18px;
+	color: inherit;
+}
+
+.wrapper {
+	display: flex;
+	align-items: flex-start;
+}
+
+.title {
+	color: $gray;
+	font-size: 18px;
+	text-transform: lowercase;
+	font-weight: 400;
+}
+
+.dropDown {
+	box-shadow: $shadow;
+	border: none;
+	border-radius: 0px;
+	padding: 0px;
+}
