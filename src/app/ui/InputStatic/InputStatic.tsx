@@ -1,8 +1,11 @@
 // styles
 import styles from "@/app/ui/InputStatic/InputStatic.module.scss"
 // interfaces
-import { InputStaticProps, inputSettings } from "@/app/ui/InputStatic/InputStatic.interface"
-import { typeInputSatic } from "@/types/enums"
+import {
+	InputStaticProps,
+	inputSettings,
+	typeInputSatic
+} from "@/app/ui/InputStatic/InputStatic.interface"
 
 export function InputStatic({ type, label = "Заголовок" }: InputStaticProps) {
 	const settings: inputSettings = {

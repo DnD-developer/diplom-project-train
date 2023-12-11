@@ -1,4 +1,10 @@
-import { typeInputSatic } from "../../../types/enums"
+export enum typeInputSatic {
+	seriaPassport,
+	numberPassport,
+	birthSertificate,
+	dateOfBirth,
+	defaultText
+}
 
 export interface InputStaticProps {
 	type: typeInputSatic

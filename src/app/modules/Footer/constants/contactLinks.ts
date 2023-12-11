@@ -1,9 +1,14 @@
 // utils
 import { FC, SVGProps } from "react"
-// intefaces
-import { typeHyperLink } from "@/types/enums"
 // icons
 import { Phone, Mail, Skype, Loacate } from "@/constants/icons"
+
+export enum typeHyperLink {
+	phone,
+	mail,
+	skype,
+	default
+}
 
 export interface contactLinktype {
 	Icon: FC<SVGProps<SVGSVGElement>>

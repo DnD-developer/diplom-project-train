@@ -2,7 +2,7 @@
 import styles from "@/app/modules/Footer/ui/LinkContactItem/LinkContactItem.module.scss"
 // interfaces
 import { LinkContactItemProps } from "@/app/modules/Footer/ui/LinkContactItem/LinkContactItem.interface"
-import { typeHyperLink } from "@/types/enums"
+import { typeHyperLink } from "@/app/modules/Footer/constants/contactLinks"
 
 export function LinkContactItem({ contactLink }: LinkContactItemProps) {
 	const { Icon, url, title, type } = contactLink

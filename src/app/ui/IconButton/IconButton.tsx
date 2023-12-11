@@ -5,8 +5,11 @@ import { ArrowTop, PlusScuare, MinusScuare, PlusCercle, MinusCercle } from "@/co
 // styles
 import styles from "@/app/ui/IconButton/IconButton.module.scss"
 // intrface
-import { typeIconButton } from "@/types/enums"
-import { IconButtonProps, IconButtonSettings } from "@/app/ui/IconButton/IconButton.interface"
+import {
+	IconButtonProps,
+	IconButtonSettings,
+	typeIconButton
+} from "@/app/ui/IconButton/IconButton.interface"
 
 export function IconButton({ type, onClick }: IconButtonProps) {
 	const [active, setActive] = useState(false)

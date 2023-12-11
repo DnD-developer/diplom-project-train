@@ -1,14 +1,12 @@
 // styles
 import styles from "@/app/modules/Footer/components/UnderFooter/UnderFooter.module.scss"
-// inerfaces
-import { typeIconButton } from "@/types/enums"
 // components
 import { Logo } from "@/app/ui/Logo"
-import { IconButton } from "@/app/ui/IconButton"
+import { IconButton, typeIconButton } from "@/app/ui/IconButton"
 
 export function UnderFooter() {
 	const onClick = () => {
-		console.info("Поехали на верх")
+		console.log("Поехали на верх")
 	}
 	return (
 		<div className={styles.wrapper}>

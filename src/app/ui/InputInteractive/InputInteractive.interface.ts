@@ -1,4 +1,7 @@
-import { typeInputInteractive } from "../../../types/enums"
+export enum typeInputInteractive {
+	choiceDate,
+	choiceLocation
+}
 
 export interface InputInteractiveProps {
 	type: typeInputInteractive

@@ -2,14 +2,14 @@
 
 ### Run commands:
 
--   **Dev**: `yarn run dev`
--   **Prod**: `yarn run build`
--   **Lint**: `yarn run lint`
--   **Test**: `yarn run test`
+- **Dev**: `yarn run dev`
+- **Prod**: `yarn run build`
+- **Lint**: `yarn run lint`
+- **Test**: `yarn run test`
 
 ### GitHub Pages:
 
-**[Preview Link](https://dnd-developer.github.io/startProject-webpack/)**
+**[Preview LinkLearnMore](https://dnd-developer.github.io/startProject-webpack/)**
 
 ### Badges:
 

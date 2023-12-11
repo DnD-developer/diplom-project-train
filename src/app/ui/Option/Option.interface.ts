@@ -1,4 +1,9 @@
-import { typeOption } from "@/types/enums"
+export enum typeOption {
+	wifi,
+	tea,
+	underwear,
+	climat
+}
 
 export interface optionProps {
 	type: typeOption

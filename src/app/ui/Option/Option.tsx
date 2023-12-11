@@ -1,17 +1,13 @@
 // utils
 import { useState, FC, SVGProps } from "react"
 // interfaces
-import { optionProps } from "@/app/ui/Option/Option.interface"
-import { typeOption } from "@/types/enums"
+import { optionProps, typeOption } from "@/app/ui/Option/Option.interface"
 // icons
-import wifi from "@/app/assets/icons/wifi-icon.svg"
-import climat from "@/app/assets/icons/climat-icon.svg"
-import tea from "@/app/assets/icons/tea-icon.svg"
-import underwear from "@/app/assets/icons/underwear-icon.svg"
+import { Wifi, Climat, Tea, UnderWear } from "@/constants/icons"
 // styles
 import styles from "@/app/ui/Option/Option.module.scss"
 
-export default function Option({ type, choice, active = true, onClick, textPrompt }: optionProps) {
+export function Option({ type, choice, active = true, onClick, textPrompt }: optionProps) {
 	const [_choice, _setChoice] = useState(choice)
 
 	const onClickHandler = () => {
@@ -21,21 +17,21 @@ export default function Option({ type, choice, active = true, onClick, textPromp
 		}
 	}
 
-	let Icon: FC<SVGProps<SVGSVGElement>> = wifi
+	let Icon: FC<SVGProps<SVGSVGElement>> = Wifi
 	let classesIcon = styles.wrapper
 
 	switch (type) {
 		case typeOption.climat:
-			Icon = climat
+			Icon = Climat
 			break
 		case typeOption.tea:
-			Icon = tea
+			Icon = Tea
 			break
 		case typeOption.underwear:
-			Icon = underwear
+			Icon = UnderWear
 			break
 		case typeOption.wifi:
-			Icon = wifi
+			Icon = Wifi
 			break
 		default:
 			break

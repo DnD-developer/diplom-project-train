@@ -1,8 +1,7 @@
 // utils
 import { useState } from "react"
 // interfaces
-import { typeButton } from "@/types/enums"
-import { buttonProps } from "@/app/ui/Button/Button.interface"
+import { buttonProps, typeButton } from "@/app/ui/Button/Button.interface"
 // styles
 import styles from "@/app/ui/Button/Button.module.scss"
 

@@ -1,5 +1,10 @@
 import { FC, SVGProps } from "react"
-import { typeIconButton } from "@/types/enums"
+
+export enum typeIconButton {
+	plusCircle,
+	plusSquare,
+	arrowTop
+}
 
 export interface IconButtonProps {
 	type: typeIconButton

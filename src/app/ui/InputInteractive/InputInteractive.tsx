@@ -1,15 +1,16 @@
 // utils
 import { ChangeEvent } from "react"
 // icons
-import Locate from "@/app/assets/icons/locate.svg"
-import Calendar from "@/app/assets/icons/calendar.svg"
+import { Locate, Calendar } from "@/constants/icons"
 // interfaces
-import { typeInputInteractive } from "@/types/enums"
-import { InputInteractiveProps } from "./InputInteractive.interface"
+import {
+	InputInteractiveProps,
+	typeInputInteractive
+} from "@/app/ui/InputInteractive/InputInteractive.interface"
 // styles
-import styles from "./InputInteractive.module.scss"
+import styles from "@/app/ui/InputInteractive/InputInteractive.module.scss"
 
-export default function InputInteractive({
+export function InputInteractive({
 	type,
 	onChange,
 	onCLick,
