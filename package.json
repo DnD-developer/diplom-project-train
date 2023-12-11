@@ -1,5 +1,5 @@
 {
-	"name": "@dnd-developer/startproject-webpack",
+	"name": "@dnd-developer/diplom-project-train",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
@@ -74,15 +74,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/DnD-developer/startProject-webpack.git"
+		"url": "https://github.com/DnD-developer/diplom-project-train.git"
 	},
 	"keywords": [],
 	"author": "@dnd-developer",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/DnD-developer/startProject-webpack/issues"
+		"url": "https://github.com/DnD-developer/diplom-project-train/issues"
 	},
-	"homepage": "https://github.com/DnD-developer/startProject-webpack#readme",
+	"homepage": "https://github.com/DnD-developer/diplom-project-train#readme",
 	"dependencies": {
 		"@ant-design/icons": "^5.2.6",
 		"@reduxjs/toolkit": "^1.9.7",
