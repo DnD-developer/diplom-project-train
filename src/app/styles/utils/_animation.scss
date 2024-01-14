@@ -1,0 +1,43 @@
+@keyframes preloader-train {
+	from {
+		opacity: 1;
+		transform: translateX(0) rotate3d(0, 1, 0, 0);
+	}
+
+	49% {
+		opacity: 0;
+		transform: translateX(120%) rotate3d(0, 1, 0, 25deg);
+	}
+
+	50% {
+		opacity: 0;
+		transform: translateX(-120%) rotate3d(0, 1, 0, -25deg);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0) rotate3d(0, 1, 0, 0);
+	}
+}
+
+@keyframes preloader-line {
+	from {
+		opacity: 1;
+		transform: translateX(0) rotate3d(0, 1, 0, 0);
+	}
+
+	49% {
+		opacity: 0;
+		transform: translateX(-120%) rotate3d(0, 1, 0, -25deg);
+	}
+
+	50% {
+		opacity: 0;
+		transform: translateX(120%) rotate3d(0, 1, 0, 25deg);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0) rotate3d(0, 1, 0, 0);
+	}
+}

@@ -1,0 +1,20 @@
+@import "@/app/styles/utils/vars";
+
+.footer {
+	background-color: $dark2f;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1260px;
+	width: 100%;
+
+	margin: 0 auto;
+	padding: 50px 15px;
+}
+
+.down-footer {
+	border-top: 1px solid $ligth-gray;
+}

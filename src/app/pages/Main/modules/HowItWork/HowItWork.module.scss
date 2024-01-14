@@ -1,0 +1,26 @@
+.wrapper {
+	padding-top: 60px;
+	padding-bottom: 90px;
+
+	background-image: url("@/app/assets/backgrounds/howItWork.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.wrapper-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.advantages-list {
+	display: flex;
+	justify-content: space-between;
+
+	max-width: 975px;
+	width: 100%;
+
+	margin: 0 auto;
+	margin-top: 100px;
+}

@@ -1,0 +1,50 @@
+@import "@/app/styles/utils/vars";
+
+.icon-wrapper {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.plus-scuare {
+	color: $ligth-gray;
+	width: 20px;
+	height: 20px;
+
+	&:hover {
+		color: $light-gold;
+	}
+}
+
+.plus-circle,
+.minus-cercle {
+	width: 32px;
+	height: 32px;
+
+	transition: all 0.3s;
+
+	&:hover {
+		color: $light-gold;
+	}
+}
+
+.plus-circle {
+	color: $orange-active-color;
+}
+
+.minus-cercle {
+	color: $gray;
+}
+
+.arrow-top {
+	display: block;
+	width: 36px;
+	height: 36px;
+
+	color: $ligth-gray;
+
+	transition: all 0.3s;
+
+	&:hover {
+		opacity: 0.5;
+	}
+}

@@ -1,0 +1,18 @@
+@import "@/app/styles/utils/vars";
+
+.list-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+
+	min-height: 310px;
+
+	background-color: $white-light-gray;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+}
