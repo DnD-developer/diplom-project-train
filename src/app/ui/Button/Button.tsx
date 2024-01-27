@@ -5,7 +5,7 @@ import { buttonProps, typeButton } from "@/app/ui/Button/Button.interface"
 // styles
 import styles from "@/app/ui/Button/Button.module.scss"
 
-export function Button({ text, type, onClick, hold }: buttonProps) {
+export function Button({ text, type, onClick, hold, typeBtn = "button" }: buttonProps) {
 	const [pressed, setPressed] = useState(false)
 
 	let className = styles.button
@@ -86,7 +86,8 @@ export function Button({ text, type, onClick, hold }: buttonProps) {
 
 	return (
 		<button
-			type="button"
+			/* eslint-disable-next-line react/button-has-type */
+			type={typeBtn}
 			onClick={onClick}
 			onMouseDown={onMouseDownHandler}
 			onMouseUp={onMouseUpHandler}

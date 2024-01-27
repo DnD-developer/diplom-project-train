@@ -1,10 +1,17 @@
 // hooks
 import { useState } from "react"
 // icons
-import { ArrowTop, PlusScuare, MinusScuare, PlusCercle, MinusCercle } from "@/constants/icons"
+import {
+	ArrowTop,
+	PlusScuare,
+	MinusScuare,
+	PlusCercle,
+	MinusCercle,
+	Switch
+} from "@/constants/icons"
 // styles
 import styles from "@/app/ui/IconButton/IconButton.module.scss"
-// intrface
+// interfaces
 import {
 	IconButtonProps,
 	IconButtonSettings,
@@ -17,7 +24,7 @@ export function IconButton({ type, onClick }: IconButtonProps) {
 	const settings: IconButtonSettings = {
 		selectIcon: ArrowTop,
 		clickStateSelectIcon: ArrowTop,
-		classes: ""
+		classes: styles.icon
 	}
 
 	switch (type) {
@@ -37,6 +44,12 @@ export function IconButton({ type, onClick }: IconButtonProps) {
 			settings.selectIcon = PlusCercle
 			settings.classes += ` ${active ? styles.minusCercle : styles.plusCircle}`
 			settings.clickStateSelectIcon = MinusCercle
+			break
+		}
+		case typeIconButton.switch: {
+			settings.selectIcon = Switch
+			settings.classes += ` ${styles.switch}`
+			settings.clickStateSelectIcon = Switch
 			break
 		}
 		default:

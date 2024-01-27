@@ -2,7 +2,6 @@
 import Phone from "@/app/assets/icons/contacts/phone.svg"
 import Mail from "@/app/assets/icons/contacts/mail.svg"
 import Skype from "@/app/assets/icons/contacts/skype.svg"
-import Loacate from "@/app/assets/icons/contacts/locate.svg"
 
 // social
 import Youtube from "@/app/assets/icons/social/youtube.svg"
@@ -34,12 +33,12 @@ import Calendar from "@/app/assets/icons/calendar.svg"
 // other
 import Rub from "@/app/assets/icons/rub.svg"
 import Star from "@/app/assets/icons/star.svg"
+import Switch from "@/app/assets/icons/switch.svg"
 
 export {
 	Phone,
 	Mail,
 	Skype,
-	Loacate,
 	Youtube,
 	Google,
 	Twitter,
@@ -58,5 +57,6 @@ export {
 	Tea,
 	UnderWear,
 	Locate,
-	Calendar
+	Calendar,
+	Switch
 }

@@ -5,6 +5,7 @@ declare global {
 			MAIN_PAGE: string
 			END_PAGE: string
 			LEARN_MORE: string
+			TICKETS_PAGE: string
 		}
 	}
 }

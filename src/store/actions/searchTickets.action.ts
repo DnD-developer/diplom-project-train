@@ -1,0 +1,4 @@
+export const SEARCHING = "SEARCHING"
+export const LOADING_SEARCH = "LOADING_SEARCH"
+export const SUCCESS_SEARCH = "SUCCESS_SEARCH"
+export const FAIL_SEARCH = "FAIL_SEARCH"

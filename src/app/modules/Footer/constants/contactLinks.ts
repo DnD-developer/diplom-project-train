@@ -1,7 +1,7 @@
 // utils
 import { FC, SVGProps } from "react"
 // icons
-import { Phone, Mail, Skype, Loacate } from "@/constants/icons"
+import { Phone, Mail, Skype, Locate } from "@/constants/icons"
 
 export enum typeHyperLink {
 	phone,
@@ -24,7 +24,7 @@ export const contactLinks: contactLinktype[] = [
 	{
 		url: "https://yandex.ru/maps/-/CDqE4Gzl",
 		title: "г.Москва ул.Московская 27-35",
-		Icon: Loacate,
+		Icon: Locate,
 		type: typeHyperLink.default
 	}
 ]

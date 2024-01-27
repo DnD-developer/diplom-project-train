@@ -12,6 +12,7 @@ export enum typeButton {
 export interface buttonProps {
 	text: string
 	type: typeButton
-	onClick: () => void
+	typeBtn?: "submit" | "button" | "reset"
+	onClick?: () => void
 	hold?: boolean
 }

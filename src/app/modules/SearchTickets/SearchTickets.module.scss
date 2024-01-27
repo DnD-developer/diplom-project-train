@@ -1,0 +1,87 @@
+@import "@/app/styles/utils/vars";
+
+.wrapper {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.wrapper-container {
+	display: flex;
+	align-items: center;
+}
+
+.wrapper-container,
+.wrapper-container-horizontal {
+	margin-top: 250px !important;
+}
+
+.wrapper-container-horizontal {
+	max-width: 1510px !important;
+}
+
+.title {
+	margin-left: 90px;
+
+	font-size: 72px;
+	font-weight: 100;
+	line-height: 84px;
+	text-align: left;
+	color: $white;
+
+	span {
+		font-weight: 700;
+	}
+}
+
+.search {
+	max-width: 730px;
+
+	margin-left: 100px;
+
+	padding-top: 20px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+.search-horizontal,
+.search {
+	width: 100%;
+	background-color: rgb($dark, 0.5);
+	padding-bottom: 60px;
+}
+
+.search-horizontal {
+	padding-top: 30px;
+	padding-right: 45px;
+	padding-left: 45px;
+}
+
+.input-floor-horizontal {
+	width: 100%;
+
+	margin-left: 35px;
+
+	&:first-child {
+		margin-left: 0px;
+	}
+}
+
+.inputs-section-horizontal {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.inputs-section {
+	margin-bottom: 90px;
+}
+
+.input-floor {
+	width: 100%;
+	margin-top: 60px;
+}
+
+.button-floor {
+	display: flex;
+	justify-content: flex-end;
+}

@@ -5,6 +5,11 @@
 	cursor: pointer;
 }
 
+.icon {
+	display: block;
+	transition: all 0.3s;
+}
+
 .plus-scuare {
 	color: $ligth-gray;
 	width: 20px;
@@ -20,8 +25,6 @@
 	width: 32px;
 	height: 32px;
 
-	transition: all 0.3s;
-
 	&:hover {
 		color: $light-gold;
 	}
@@ -36,13 +39,21 @@
 }
 
 .arrow-top {
-	display: block;
 	width: 36px;
 	height: 36px;
 
 	color: $ligth-gray;
 
-	transition: all 0.3s;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+.switch {
+	width: 21px;
+	height: 21px;
+
+	color: $grayAD;
 
 	&:hover {
 		opacity: 0.5;

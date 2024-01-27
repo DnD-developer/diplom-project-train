@@ -4,17 +4,17 @@ import { Footer } from "@/app/modules/Footer"
 import { About } from "@/app/pages/Main/modules/About"
 import { HowItWork } from "@/app/pages/Main/modules/HowItWork"
 import { Reviews } from "@/app/pages/Main/modules/Reviews"
+import { SearchTickets } from "@/app/modules/SearchTickets"
 // interfaces
 import { PagesProps } from "@/app/pages/pages.interface"
 
 export function MainPage({ background }: PagesProps) {
 	return (
 		<>
-			<div
-				className="content"
-				style={{ backgroundImage: `url(${background})` }}>
-				<Header />
-				<div style={{ height: "827px" }} />
+			<div className="content">
+				<SearchTickets background={background}>
+					<Header />
+				</SearchTickets>
 				<About
 					id={linksOfRoutes[0].url}
 					title={linksOfRoutes[0].text}
