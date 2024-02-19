@@ -5,8 +5,6 @@ HELP.md
 dist
 doc
 
-.env
-
 # Logs
 logs
 *.log

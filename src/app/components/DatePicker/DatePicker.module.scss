@@ -1,0 +1,77 @@
+@import "@/app/styles/utils/vars";
+
+:global {
+	.ant-picker {
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+
+		input {
+			font-size: inherit !important;
+			font-weight: inherit !important;
+			font-family: inherit !important;
+			color: inherit !important;
+
+			&::placeholder {
+				color: $ligth-gray !important;
+			}
+		}
+	}
+
+	.ant-picker-input {
+		font-size: inherit;
+		font-weight: inherit;
+		font-family: inherit;
+		color: inherit;
+	}
+
+	.ant-picker-suffix {
+		color: $ligth-gray !important;
+		font-size: 30px;
+	}
+
+	.anticon-close-circle {
+		font-size: 30px;
+	}
+}
+
+.input-general,
+.input-general-small {
+	display: block;
+	width: 100%;
+	line-height: 59px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+
+	color: $dark;
+
+	border: none;
+	border-radius: 3px;
+
+	font-size: 18px;
+	font-weight: 400;
+
+	outline: none;
+
+	cursor: pointer;
+
+	color: $dark;
+
+	&::placeholder {
+		color: $ligth-gray !important;
+	}
+}
+
+.input-general-small {
+	line-height: 43px !important;
+
+	:general {
+		.ant-picker-suffix {
+			font-size: 22px !important;
+		}
+	}
+}
+
+:export {
+	accentColor: $orange-active-color;
+}

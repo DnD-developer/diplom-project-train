@@ -3,7 +3,8 @@ import { FC, SVGProps } from "react"
 export enum typeIconButton {
 	plusCircle,
 	plusSquare,
-	arrowTop
+	arrowTop,
+	switch
 }
 
 export interface IconButtonProps {

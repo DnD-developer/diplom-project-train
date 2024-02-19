@@ -1,11 +1,9 @@
-// utils
-import React from "react"
 // interfaces
-import { PreloaderStatusProps } from "./PreloaderStatus.interface.js"
+import { PreloaderStatusProps } from "@/app/ui/PreloaderStatus/PreloaderStatus.interface"
 // styles
-import styles from "./PreloaderStatus.module.scss"
+import styles from "@/app/ui/PreloaderStatus/PreloaderStatus.module.scss"
 
-export default function PreloaderStatus({ progress }: PreloaderStatusProps) {
+export function PreloaderStatus({ progress }: PreloaderStatusProps) {
 	return (
 		<div className={styles.line}>
 			<div
