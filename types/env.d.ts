@@ -6,6 +6,9 @@ declare global {
 			END_PAGE: string
 			LEARN_MORE: string
 			TICKETS_PAGE: string
+			PASSENGERS_PAGE: string
+			PAY_PAGE: string
+			CHECK_PAGE: string
 		}
 	}
 }

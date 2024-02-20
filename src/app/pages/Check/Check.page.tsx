@@ -6,7 +6,7 @@ import { Footer } from "@/app/modules/Footer"
 import { SearchTickets } from "@/app/modules/SearchTickets"
 import { BreadCrumbs, navigation } from "@/app/modules/BreadCrumbs"
 
-export function TicketsPage({ background }: PagesProps) {
+export function CheckPage({ background }: PagesProps) {
 	return (
 		<>
 			<div className="content">
